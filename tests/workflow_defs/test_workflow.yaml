@@ -1,0 +1,33 @@
+name: Test KLA Module
+metadata:
+  author: Doga Ozgulbas
+  info: Tests the functionality of the KLA  Module
+  version: 0.1
+
+modules:
+  - name: kla_module
+
+flowdef:
+  - name: Load KLA protocol
+    module: kla_module
+    action: load_protocol
+    args:
+      protocol_file_path: ../README.md
+    checks: null
+    comment: Load KLA protocol
+
+  - name: Run KLA protocol
+    module: kla_module
+    action: run_protocol
+    args:
+      {}
+    checks: null
+    comment: Run KLA protocol
+
+  - name: Get Output KLA
+    module: kla_module
+    action: get_output_file
+    args:
+      {}
+    checks: null
+    comment: Get KLA output file
