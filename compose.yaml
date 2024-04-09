@@ -1,7 +1,7 @@
-name: kla_module
+name: fom_module
 services:
-  kla_module:
-    container_name: kla_module
+  fom_module:
+    container_name: fom_module
     image: ${IMAGE}
     build:
       context: .
@@ -9,10 +9,10 @@ services:
       tags:
         - ${IMAGE}:latest
         - ${IMAGE}:dev
-    command: python -m kla_rest_node --port 3015 --kla_url ${KLA_URL}
+    command: python -m fom_rest_node --port 3019 --fom_url ${fom_URL}
     env_file: .env
     volumes:
-      - ./src:/home/app/kla_module/src
-      - ./tests:/home/app/kla_module/tests
+      - ./src:/home/app/fom_module/src
+      - ./tests:/home/app/fom_module/tests
     ports:
-      - 3015:3015
+      - 3019:3019
