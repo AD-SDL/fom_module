@@ -1,7 +1,7 @@
 [project]
-name = "kla_module"
+name = "fom_module"
 version = "0.2.0"
-description = "Software for automatting a KLA robot"
+description = "Software for automatting a FOM device"
 authors = [
     {name = "Ryan D. Lewis", email="ryan.lewis@anl.gov"},
     {name = "Rafael Vescovi", email="ravescovi@anl.gov"},
@@ -24,7 +24,7 @@ readme = "README.md"
 license = {text = "MIT"}
 
 [project.urls]
-homepage = "https://github.com/AD-SDL/kla_module"
+homepage = "https://github.com/AD-SDL/fom_module"
 
 ######################
 # Build Info + Tools #
