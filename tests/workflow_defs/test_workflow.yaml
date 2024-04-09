@@ -1,33 +1,33 @@
-name: Test KLA Module
+name: Test fom Module
 metadata:
   author: Doga Ozgulbas
   info: Tests the functionality of the KLA  Module
   version: 0.1
 
 modules:
-  - name: kla_module
+  - name: fom_module
 
 flowdef:
-  - name: Load KLA protocol
-    module: kla_module
+  - name: Load fom protocol
+    module: fom_module
     action: load_protocol
     args:
       protocol_file_path: ../README.md
     checks: null
-    comment: Load KLA protocol
+    comment: Load fom protocol
 
-  - name: Run KLA protocol
-    module: kla_module
+  - name: Run fom protocol
+    module: fom_module
     action: run_protocol
     args:
       {}
     checks: null
-    comment: Run KLA protocol
+    comment: Run fom protocol
 
-  - name: Get Output KLA
-    module: kla_module
+  - name: Get Output fom
+    module: fom_module
     action: get_output_file
     args:
       {}
     checks: null
-    comment: Get KLA output file
+    comment: Get fom output file
